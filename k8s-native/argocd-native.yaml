@@ -1,0 +1,16 @@
+- name: install argocd
+  hosts: masters
+  become: yes
+  tasks:
+    - name: Add stable chart repo
+      kubernetes.core.helm_repository:
+        name: argocd
+        repo_url: "https://argoproj.github.io/argo-helm"
+    - name: Deploy latest version of argocd chart inside monitoring namespace with values
+      kubernetes.core.helm:
+        name: argocd
+        chart_version: "6.55.0"
+        chart_ref: argocd/argo-cd
+        release_namespace: argocd
+        update_repo_cache: true
+        kubeconfig: /home/ubuntu/.kube/config
