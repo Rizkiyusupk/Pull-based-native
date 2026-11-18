@@ -36,14 +36,14 @@ lalu yang kedua
 k8s/
 ├── ansible.cfg
 ├── inventory
-├── playbook-allow-port.yaml
-├── playbook-ip.yaml
-├── playbook-join.yaml
-├── playbook-kubernetes.yaml
-├── playbook-pkg.yaml
-├── playbook-swap.yaml
-├── playbook-config.yaml
-├── argocd.yaml
+├── playbook-allow-port-native.yaml
+├── playbook-ip-native.yaml
+├── playbook-join-native.yaml
+├── playbook-kubernetes-native.yaml
+├── playbook-pkg-native.yaml
+├── playbook-swap-native.yaml
+├── playbook-config-native.yaml
+├── argocd-native.yaml
 ├── service-account.yaml
 ├── clusterrole.yaml
 ├── role-binding.yaml
