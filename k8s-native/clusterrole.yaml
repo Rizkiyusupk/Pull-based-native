@@ -1,7 +1,7 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  name: argocd-deployler-role
+  name: $clusterrole-name
 rules:
   - apiGroups: ["", "apps"]
     resources: ["secrets", "services", "pods", "deployments"]
